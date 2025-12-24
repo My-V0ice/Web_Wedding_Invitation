@@ -218,6 +218,7 @@ p {
   color: var(--secondary-text-color);
   text-align: center;
   text-transform: uppercase;
+  line-height: 100%;
 }
 
 .wish {
