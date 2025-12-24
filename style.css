@@ -129,6 +129,8 @@ p {
 }
 
 .transition {
+  position: relative;
+  top: -1px;
   width: 100%;
   max-width: 475px;
   height: 112px;
