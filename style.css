@@ -1,0 +1,284 @@
+:root {
+  --primary-background-color: #730c21;
+  --secondary-background-color: #fdfaf1;
+
+  --primary-text-color: #730c21;
+  --secondary-text-color: #fdfaf1;
+  --tertiary-text-color: #000000;
+
+  --primary-size-text: 22px;
+  --secondary-size-text: 16px;
+  --tertiary-size-text: 10px;
+
+  --primary-size-title: 34px;
+  --secondary-size-title: 22px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Daneehand";
+  src: url("./assets/fonts/Daneehand.ttf") format("ttf"),
+    url("./assets/fonts/Daneehand.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cygre-Light";
+  src: url("./assets/fonts/Cygre-Light.ttf") format("ttf"),
+    url("./assets/fonts/Cygre-Light.woff2") format("woff2");
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  padding-top: 64px;
+  background-color: var(--primary-background-color);
+}
+
+.title__box-header {
+  padding: 10px 40px;
+}
+
+.header__title {
+  font-family: "Daneehand", sans-serif;
+  font-weight: 400;
+  font-size: var(--primary-size-title);
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.newlyweds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  padding: 8px 0;
+
+  font-family: "Daneehand", sans-serif;
+  font-weight: 400;
+  font-size: var(--secondary-size-title);
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+}
+
+.rings {
+  width: 40px;
+}
+
+.header__card {
+  position: relative;
+  margin-top: 8px;
+}
+
+.card {
+  max-width: 144px;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #730c21;
+}
+
+.card__text {
+  font-family: "Cygre-Light", sans-serif;
+  font-size: var(--tertiary-size-text);
+  font-weight: 300;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.card:first-child {
+  rotate: -6deg;
+}
+
+.card:last-child {
+  position: absolute;
+  top: 46px;
+  right: 22px;
+  rotate: 9deg;
+}
+
+.card:last-child .card__text {
+  margin-top: 4px;
+}
+
+.transition {
+  width: 100%;
+  max-width: 400px;
+  height: 112px;
+}
+
+.transition-1 {
+  margin: 60px auto 0 auto;
+  background-image: url(./assets/img/transition-1.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.transition-2 {
+  margin: 0 auto;
+  background-image: url(./assets/img/transition-2.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  background-color: var(--secondary-background-color);
+}
+
+.main__title {
+  font-family: "Daneehand", sans-serif;
+  font-size: var(--primary-size-title);
+  font-weight: 400;
+  color: var(--primary-text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.main__content {
+  display: grid;
+  row-gap: 10px;
+  margin-top: 16px;
+}
+
+.content__title {
+  font-family: "Daneehand", sans-serif;
+  font-size: var(--secondary-size-title);
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+
+.content__text {
+  font-family: "Cygre-Light", sans-serif;
+  font-size: var(--secondary-size-text);
+  font-weight: 300;
+  color: var(--tertiary-text-color);
+}
+
+.footer__content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px 0 40px 0;
+  background-image: url("./assets/img/footer.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.footer__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  border-top: 4px solid #ffffff;
+  border-bottom: 25px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+}
+
+.footer__title {
+  font-family: "Daneehand", sans-serif;
+  font-size: var(--secondary-size-title);
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wish {
+  display: grid;
+  row-gap: 8px;
+  margin-top: 40px;
+}
+
+.wish__title {
+  font-family: "Daneehand", sans-serif;
+  font-size: var(--primary-size-title);
+  font-weight: 400;
+  color: var(--primary-text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wish__text {
+  font-family: "Cygre-Light", sans-serif;
+  font-size: var(--secondary-size-text);
+  font-weight: 300;
+  color: var(--tertiary-text-color);
+  text-align: center;
+}
+
+.info__block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info__img {
+  display: block;
+}
+
+.info__title {
+  font-family: "Daneehand", sans-serif;
+  font-size: var(--secondary-size-title);
+  font-weight: 400;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.info__text {
+  font-family: "Cygre-Light", sans-serif;
+  font-size: var(--secondary-size-text);
+  font-weight: 300;
+  color: var(--tertiary-text-color);
+}
+
+.info__block:nth-child(odd) {
+  text-align: left;
+}
+
+.info__block:nth-child(even) {
+  text-align: right;
+}
+
+.info__img-pos {
+  position: absolute;
+  top: -36px;
+  right: 0;
+}
