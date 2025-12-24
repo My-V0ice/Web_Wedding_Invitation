@@ -94,7 +94,8 @@ p {
 
 .header__card {
   position: relative;
-  margin-top: 8px;
+  margin: 8px auto 0 auto;
+  max-width: 312px;
 }
 
 .card {
@@ -232,6 +233,7 @@ p {
   color: var(--primary-text-color);
   text-align: center;
   text-transform: uppercase;
+  line-height: 100%;
 }
 
 .wish__text {
@@ -240,6 +242,7 @@ p {
   font-weight: 300;
   color: var(--tertiary-text-color);
   text-align: center;
+  line-height: 100%;
 }
 
 .info__block {
